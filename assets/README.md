@@ -39,7 +39,9 @@ lockup exists in the Figma file. The brand guide describes it as "same shapes,
 wordmark recolored white," so it was produced by taking
 `pinnacle-logo-horizontal-color.svg` and changing the 9 wordmark paths from
 `fill="black"` to `fill="white"`. The mark and all path geometry are untouched.
-**Worth a human eyeball before it ships.**
+It was rendered and visually checked on Deep Teal — orange mark, white wordmark,
+transparent background, correct. It is still not an official Figma artifact, so
+it is worth Jeremy's sign-off before it ships.
 
 **3. The "black" lockup is not strictly one-color.** `pinnacle-logo-horizontal-black.svg`
 keeps the orange triangle on the `i` (10 black paths, 1 orange). That matches the

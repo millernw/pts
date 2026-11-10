@@ -39,7 +39,7 @@ The build cannot start properly until these are in `/assets/`:
 
 - [x] All logo SVG variants, exported from the Pinnacle Figma file — 11 files, see `assets/README.md` for provenance and three caveats
 - [x] `pinnacle-app-icon.svg` for the favicon
-- [ ] **Human check:** `pinnacle-logo-horizontal-reversed.svg` was derived by recoloring the wordmark, not exported — no such lockup exists in Figma
+- [ ] **Sign-off:** `pinnacle-logo-horizontal-reversed.svg` was derived by recoloring the wordmark, not exported — no such lockup exists in Figma. Renders correctly on Deep Teal, but it is not official artwork
 - [ ] Jeremy on site with a client — hero photo, cut out, B&W
 - [ ] Jeremy Nelson founder portrait — cut out, B&W
 - [ ] Team headshot cutouts with names and titles
