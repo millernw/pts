@@ -37,8 +37,9 @@ This repo exists so that AI Studio (and any other AI builder) can read the brief
 
 The build cannot start properly until these are in `/assets/`:
 
-- [ ] All eight logo SVG variants, exported from the Pinnacle Figma file (list in 02-design-direction.md)
-- [ ] `pinnacle-app-icon.svg` for the favicon
+- [x] All logo SVG variants, exported from the Pinnacle Figma file — 11 files, see `assets/README.md` for provenance and three caveats
+- [x] `pinnacle-app-icon.svg` for the favicon
+- [ ] **Human check:** `pinnacle-logo-horizontal-reversed.svg` was derived by recoloring the wordmark, not exported — no such lockup exists in Figma
 - [ ] Jeremy on site with a client — hero photo, cut out, B&W
 - [ ] Jeremy Nelson founder portrait — cut out, B&W
 - [ ] Team headshot cutouts with names and titles

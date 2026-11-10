@@ -35,7 +35,7 @@ Signature look in one line: mostly white pages, Pinnacle Orange and Deep Teal as
 
 ## Assets
 
-- **Logo:** `/assets/` — place as SVG, never retyped as live text. Variants: `pinnacle-logo-horizontal-color.svg` (default, light backgrounds), `-reversed.svg` (on Deep Teal / charcoal), `-white.svg` (over photos), `-black.svg`, `-orange.svg` (dark only), `pinnacle-mark-orange.svg`, `pinnacle-app-icon.svg` (favicon). **[Source files live in the Pinnacle Figma — export and commit to `/assets/` before the build. Not in the repo yet.]**
+- **Logo:** `/assets/` — place as SVG, never retyped as live text. Variants: `pinnacle-logo-horizontal-color.svg` (default, light backgrounds), `-reversed.svg` (on Deep Teal / charcoal), `-white.svg` (over photos), `-black.svg`, `-orange.svg` (dark only), `pinnacle-mark-orange.svg`, `pinnacle-app-icon.svg` (favicon), plus stacked lockups. **All 11 files are in `/assets/` — see `assets/README.md` before using them.**
 - **Hero image:** Photo of Jeremy on site with a client. **[not shot yet — see 02 for treatment]**
 - **Brand colors file:** See the full token table in **02-design-direction.md**
 
