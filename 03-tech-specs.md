@@ -65,9 +65,9 @@ Compress every photo before committing — target under 400kb for a hero image, 
 | Integration | Purpose | Notes |
 |-------------|---------|-------|
 | Booking tool | Book an IT Walkthrough | **[not chosen]** — Calendly or Cal.com. Decide whether the primary CTA opens a booker or a short form that Jeremy calls back from. This is the most consequential open decision on the site. |
-| Security assessment | The transitional CTA — collects email, returns a score, lists actions | **[not chosen]** — may be a third-party quiz tool, a vendor-provided assessment, or custom. Drives a follow-up email sequence. See Decisions Needed #2. |
-| Form handling | Contact form, and the walkthrough form if used | **[not chosen]** — Cloudflare/Netlify native forms if hosted there, otherwise Formspree |
-| Email automation | Assessment follow-up sequence | **[not chosen]** — depends on the assessment tool |
+| Security assessment | The transitional CTA | **Pinnacle's own existing system.** Do not build one. The band and nav item link out to it. **[URL needed]** — the build uses the placeholder `#assessment-url-tbd`. |
+| Form handling | Contact form | **Connected** — HighLevel form tracking in the Pinnacle sub-account. Submissions create contacts. |
+| Email automation | Follow-up on contact submissions | **[not chosen]** — HighLevel workflows are the obvious route since contacts already land there |
 | Google Analytics 4 | Traffic and conversion tracking | **[Measurement ID needed]** |
 | Google Business Profile | Local SEO, review badge in footer | Link once reviews are collected |
 | Call tracking | Attribute phone calls to the site | **[optional — recommended for this category, but adds a tracking number that may conflict with the "one number to call" promise]** |
@@ -80,9 +80,9 @@ Compress every photo before committing — target under 400kb for a hero image, 
 
 | Form | Fields | Where Data Goes | Notes |
 |------|--------|----------------|-------|
-| Contact | Name, Organization, Email, Phone, Message | **[destination needed]** | Labels always visible above fields, 48px tall inputs, 2px orange focus ring |
-| Book a walkthrough | **[depends on booking tool]** | **[destination needed]** | If a booker is embedded, no form is needed |
-| Security assessment | Email + assessment answers | **[depends on assessment tool]** | Must state what happens to the email before submit |
+| Contact | Name, Organization, Email, Phone, Message | HighLevel CRM, via connected form tracking | Labels always visible above fields, 48px tall inputs, 2px orange focus ring. Built and wired. |
+| Book a walkthrough | **[depends on booking decision]** | **[destination needed]** | If a booker is embedded, no form is needed |
+| Security assessment | Handled entirely by Pinnacle's own system | Not this site | The site only links out |
 
 Every form needs a visible privacy line and a real success state. No form may collect more than it needs.
 
@@ -147,9 +147,10 @@ Every form needs a visible privacy line and a real success state. No form may co
 
 ## Decisions Needed Before Building
 
-1. **Framework and hosting.** Everything above marked [confirm]. A static build is assumed.
-2. **The security assessment.** This is the transitional CTA, it appears in the nav on every page, it has its own results page with the primary CTA on it, and it drives an email sequence. It needs a tool, a URL, a known duration, and a follow-up sequence before the lead-generator band can be built for real.
-3. **Booking flow.** Does "Book an IT Walkthrough" open an embedded booker, go to a form, or go to a `tel:` link? This changes the hero, the plan section, the final CTA, and the assessment results page.
-4. **Repo visibility.** Public is assumed so raw asset URLs work.
-5. **Domain and existing site.** Confirm the domain, and whether an existing site is being replaced — if so, audit its rankings and set up redirects before launch.
-6. **Analytics and call tracking.** GA4 property, and whether to add call tracking despite the tracking-number tension.
+1. ~~**Framework and hosting.**~~ **Resolved for the build** — React + Tailwind, built in HighLevel AI Studio. Hosting is whatever AI Studio publishes to; confirm the custom domain before launch.
+2. ~~**The security assessment.**~~ **Resolved** — Pinnacle has its own system. The site links out. **Still needed: the URL and how long it takes.**
+3. **Booking flow — still open.** Does "Book an IT Walkthrough" open an embedded booker, go to a form, or go to a `tel:` link? It appears in the header, hero, plan, and final CTA.
+4. ~~**Repo visibility.**~~ **Resolved** — public, verified by unauthenticated fetches of the raw asset URLs.
+5. **Domain and existing site — still open.** Confirm the domain, and whether an existing site is being replaced. If so, audit its rankings and set up redirects before launch.
+6. **Analytics and call tracking — still open.** GA4 property, and whether to add call tracking despite the tracking-number tension.
+7. **Photography — the real blocker.** Hero, Jeremy, team headshots, and the two "Who we serve" shots. Every one is a labelled placeholder until the shoot happens.

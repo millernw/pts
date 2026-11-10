@@ -20,15 +20,14 @@
 | IT for Businesses | `/businesses` | P1 | Audience page. Target of "IT for Businesses". |
 | IT for Nonprofits and Ministries | `/nonprofits` | P1 | Audience page. Carries the nonprofit-discount and donor-data angle. |
 | About | `/about` | P1 | Jeremy and the team, with real B&W cutout photos. Trust page — referrals land here. |
-| Free Security Assessment | `/security-assessment` | P1 | The transitional CTA. Nav item on every page. |
-| Assessment results | `/security-assessment/results` | P1 | Score + action list, with the primary CTA directly under the list. **[depends on the assessment tool]** |
+| Free Security Assessment | *external link* | P1 | **Not a page on this site.** Pinnacle has its own assessment system; the nav item and the lead-generator band link out to it. **[URL needed — currently `#assessment-url-tbd`]** |
 | Contact | `/contact` | P1 | Form plus NAP and hours. |
 | Privacy Policy | `/privacy` | P1 | Legal — can be simple, but the assessment collects emails so it must be real. |
 | Terms | `/terms` | P1 | Legal — can be simple. |
 | Service-area pages | `/it-support/[town]` | P2 | Strong local-SEO play for this category. Needs the town list. |
 | Blog index | `/blog` | P3 | Only if there is a real plan to publish. |
 
-**P1 is 14 pages**, but ten of them are short. The homepage carries the argument; the service and audience pages exist mostly so the homepage cards have somewhere to go and so local search has pages to rank.
+**P1 is 12 pages**, and eight of them are short. The homepage carries the argument; the service and audience pages exist mostly so the homepage cards have somewhere to go and so local search has pages to rank. All 12 are built — see `06-build-log.md`.
 
 ---
 

@@ -1,7 +1,8 @@
 # 05 — Build Prompts for AI Studio
 
-> Ready-to-paste prompts for building the Pinnacle site in Google AI Studio.
-> Work top to bottom. Do not skip the DECIDE FIRST block.
+> **Status: the site has been built.** See `06-build-log.md` for what exists and where.
+> Keep this file for rebuilding, for adding sections, or for starting the next project.
+> It was written for Google AI Studio; the site was actually built in **HighLevel's AI Studio**, which reads the sub-account Brand Board. The prompts work in either, but in HighLevel you can lean on the Brand Board instead of restating the palette.
 
 ---
 
@@ -11,10 +12,10 @@ These are the conflicts recorded in `01-content.md`. **Resolve them before you p
 
 | # | Decision | Options | Where it lands |
 |---|----------|---------|----------------|
-| 1 | **Primary CTA label** | *Book an IT Walkthrough* (current) / *Schedule a Tour* / *Book a free IT assessment* | Header, hero, plan, final CTA, assessment results — **5 places** |
+| 1 | ~~Primary CTA label~~ **SETTLED** | **Book an IT Walkthrough** | Header, hero, plan, final CTA — 4 places in the built site |
 | 2 | **Client size** | 10–80 employees (current) / 10–20 | `/businesses` copy, hero subhead tone |
-| 3 | **The proposal** | Flat monthly price (current) / Two options + 60–90 day promise | Plan step 2, `/how-it-works` |
-| 4 | **Lead-gen tone** | Keep the "One Click From a Meltdown" headline (current) / rewrite calm | Lead generator band |
+| 3 | **The proposal** | Flat monthly price (current) / Two options + 60–90 day promise | Plan step 2 |
+| 4 | **Lead-gen tone** | Keep the "one click from a meltdown" headline (current) / rewrite calm | Lead generator band |
 
 If you keep the current answers, change nothing. If you don't, edit `01-content.md` **first**, then build.
 
@@ -98,8 +99,9 @@ build any page sections yet.
    - Logo (renders an SVG from /assets by variant name)
 
 5. Set up routes for: /, /managed-it, /phones, /cyber-security, /building-security,
-   /services, /businesses, /nonprofits, /about, /security-assessment,
-   /security-assessment/results, /contact, /privacy, /terms. Stub pages are fine.
+   /services, /businesses, /nonprofits, /about, /contact, /privacy, /terms.
+   Stub pages are fine. Do NOT create a security-assessment route — Pinnacle has
+   its own assessment system and the site only links out to it.
 
 HARD RULES — these override your defaults:
 - Buttons are orange with CHARCOAL text. NEVER white text on orange. It fails contrast
@@ -261,6 +263,7 @@ Run through this after the homepage is assembled:
 - [ ] Steel `#737373` appears only on captions, never on paragraphs
 - [ ] The comparison table pairs its rows on mobile rather than splitting into two lists
 - [ ] Tab through the page: visible focus on every interactive element
+- [ ] **No writing instruction has leaked into visible copy.** Read the rendered page, not the brief. This one actually happened: a results page shipped the line *"…the specific actions that would close the gaps — calm, in priority order, no scare tactics."* The trailing phrase was a directive to the builder, not copy for a visitor. It breaks no brand rule, so no other check catches it. Scan for directive words in body text: *calm, plain-spoken, no scare tactics, boilerplate, concise, in priority order, respectful*
 - [ ] Lighthouse mobile: LCP under 2.0s, accessibility 100
 
 ---

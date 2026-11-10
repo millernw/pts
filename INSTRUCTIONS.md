@@ -16,8 +16,9 @@ This system turns a blank website project into a fully briefed, strategy-first b
 | `03-tech-specs.md` | Framework, hosting, integrations, constraints | Vibe coder |
 | `04-structure.md` | Site map, navigation, section order, layout | Vibe coder |
 | `05-build-prompts.md` | Pre-build decisions and ready-to-paste AI Studio prompts | You |
+| `06-build-log.md` | What was actually built, where it lives, and what is still blocked | You |
 
-> **For this project, start at `05-build-prompts.md`.** Files 00–04 are already filled in, so the intake below has been run. `05` tells you what to decide first and what to paste, in order.
+> **For this project, start at `06-build-log.md`.** The intake has been run, files 00–04 are filled in, and the site is built in HighLevel AI Studio. `06` tells you the current state and what is still outstanding. `05` is kept for rebuilds and for the next project.
 
 **The general flow:**
 1. You set up a new project folder with the template files

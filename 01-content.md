@@ -166,7 +166,9 @@ A full-width band in a contrasting color, so it reads as a separate offer rather
 - **Microcopy under button:** Free. Takes [X] minutes. Results sent instantly.
 - **Optional graphic:** security score gauge
 
-The assessment collects an email, returns a score, and gives a list of actions. On its results page, put the **Book an IT Walkthrough** button directly under the action list — anyone with a low score is the warmest lead the site will produce. The nav item for this assessment stays visible on every page; it is the lowest-commitment way in and should never be more than one click away.
+**Pinnacle runs its own risk assessment system. Do not build one.** This band and the "Free Security Assessment" nav item link out to it. Wherever that system shows its results, the **Book an IT Walkthrough** button belongs directly under the action list — anyone with a low score is the warmest lead the site will produce. The nav item stays visible on every page; it is the lowest-commitment way in and should never be more than one click away.
+
+**[Assessment URL still needed.** The live build uses the placeholder `#assessment-url-tbd` with a visible note beside the button. The `[X] minutes` microcopy also depends on how long Pinnacle's own assessment takes.**]**
 
 ---
 
@@ -299,13 +301,13 @@ Lead with that belief, not with a company timeline. Keep it in Jeremy's voice. I
 
 > **Four real disagreements between the source documents. Each needs a human decision before build — do not let the vibe coder pick.**
 
-1. **Primary CTA label — three versions exist.** The wireframe says *Book an IT Walkthrough* / *Book a walkthrough*. The homepage copy doc says *Schedule a Tour*. The brand guide says *Book a free IT assessment*. This file uses **Book an IT Walkthrough** throughout because the wireframe is the most recent concrete artifact, but the label appears in the header, hero, plan, final CTA, and assessment results page — pick one and change it everywhere.
+1. ~~**Primary CTA label — three versions exist.**~~ **RESOLVED — "Book an IT Walkthrough".** The wireframe said *Book an IT Walkthrough*, the copy doc said *Schedule a Tour*, the brand guide said *Book a free IT assessment*. The built site commits to **Book an IT Walkthrough** in the header, hero, plan, and final CTA. Changing it now means editing all four places.
 
 2. **Ideal client size.** The BrandScript says 10–80 employees. The brand guide says 10–20. This file uses 10–80 with 10–20 as the sweet spot. It matters for the `/businesses` page copy.
 
 3. **What the proposal looks like.** The wireframe's step 2 promises "a clear recommendation and a flat monthly price." The BrandScript and copy doc promise "two options: one that fixes your most pressing problems now, and one that brings everything up to a standard you've never had." These are different sales motions. The two-option version also implies a 60–90 day remediation promise that the flat-price version doesn't.
 
-4. **Fear in the lead generator vs. the calm voice rule.** The brand guide explicitly lists "fear tactics about hackers and ransomware" as something the brand never sounds like. The lead-generator headline is *Is Your Business One Click From a Cyber Security Meltdown?* Either sanction this as a deliberate exception for the one conversion band (what this file assumes) or rewrite it in the calm register.
+4. **Fear in the lead generator vs. the calm voice rule — still open.** The brand guide explicitly lists "fear tactics about hackers and ransomware" as something the brand never sounds like. The lead-generator headline is *Is your business one click from a cyber security meltdown?* The built site ships it as a sanctioned exception for that one conversion band, set in sentence case per the heading rule. Either confirm that, or rewrite it in the calm register — it is the one place the site raises its voice.
 
 **Also still open, but not conflicts:**
 
@@ -314,7 +316,8 @@ Lead with that belief, not with a company timeline. Keep it in Jeremy's voice. I
 - [ ] Three testimonials with name, title, organization, and written permission
 - [ ] Client logo permissions for the proof strip
 - [ ] Whether calls route to Jeremy directly or a main line
-- [ ] Assessment URL, how many minutes it takes, and the follow-up email sequence it triggers
+- [ ] Assessment URL from Pinnacle's own system, plus how long it takes — replaces `#assessment-url-tbd` and the `[X] minutes` microcopy
+- [ ] Where "Book an IT Walkthrough" points: a booking tool, a form, or a `tel:` link
 - [ ] Service-area town list for local SEO
 - [ ] How far facility security goes — cameras, access control, alarms? — so the copy matches what Pinnacle actually sells
 - [ ] Team headshots, names, and titles
