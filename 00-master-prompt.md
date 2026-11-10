@@ -59,7 +59,7 @@ Signature look in one line: mostly white pages, Pinnacle Orange and Deep Teal as
 - DO NOT use pill buttons, large rounded cards, or glassmorphism. The logo is all sharp angles.
 - DO NOT use banned imagery: glowing circuit boards, binary code, padlock-on-blue icons, hooded hackers, handshake stock photos, or server rooms that are not Pinnacle's.
 - DO NOT use fear tactics in body copy. *(The one sanctioned exception is the lead-generator headline — see 01-content.md.)*
-- Output format: **[confirm — default assumption is a static multi-page build, see 03-tech-specs.md]**
+- Output format: **React + Vite + TypeScript with Tailwind, multi-page via React Router.** Palette and spacing live as named Tailwind tokens — never raw hex in components. See 03-tech-specs.md.
 
 ---
 

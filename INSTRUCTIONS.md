@@ -15,6 +15,9 @@ This system turns a blank website project into a fully briefed, strategy-first b
 | `02-design-direction.md` | Visual style, colors, typography, references | Vibe coder |
 | `03-tech-specs.md` | Framework, hosting, integrations, constraints | Vibe coder |
 | `04-structure.md` | Site map, navigation, section order, layout | Vibe coder |
+| `05-build-prompts.md` | Pre-build decisions and ready-to-paste AI Studio prompts | You |
+
+> **For this project, start at `05-build-prompts.md`.** Files 00–04 are already filled in, so the intake below has been run. `05` tells you what to decide first and what to paste, in order.
 
 **The general flow:**
 1. You set up a new project folder with the template files

@@ -9,13 +9,15 @@
 
 ## Framework & Output
 
-- **Framework:** Static HTML/CSS/JS, no build step **[confirm]**
-- **Output format:** Multi-page static site — one HTML file per route **[confirm]**
-- **CSS approach:** One shared `styles.css` with CSS custom properties for the color and spacing tokens in 02-design-direction.md **[confirm]**
-- **JavaScript approach:** Vanilla JS, kept minimal — sticky header state, mobile nav toggle, scroll reveal, accordion **[confirm]**
-- **Package manager:** None **[confirm]**
+- **Framework:** React + Vite
+- **Output format:** Multi-page site using React Router — one route per page in the site map
+- **CSS approach:** Tailwind, with the 02-design-direction.md palette and spacing scale defined as theme tokens in `tailwind.config.js`. No arbitrary hex values in components — use the token names
+- **JavaScript approach:** TypeScript
+- **Package manager:** npm
 
-**Why this default:** the brand guide targets sub-2-second mobile loads with two font families and SVG logos, and the site is a 10-page brochure with no app behavior. A static build hits that target with no toolchain. If a CMS is wanted for the blog later (see below), Astro is the natural upgrade path — it keeps the static output and adds Markdown content collections.
+**Why this stack:** the site is being built in Google AI Studio, whose build mode produces React + Tailwind projects. An earlier draft of this file specified static HTML with no build step, chosen to hit the sub-2-second mobile target. That target is still reachable through a Vite production build, and fighting the tool's natural output costs more than it saves. **If the build moves off AI Studio, static HTML or Astro is the better fit — revert this section.**
+
+**Token discipline matters more than the framework.** The colors, spacing scale, and type scale in 02-design-direction.md must live in `tailwind.config.js` as named tokens. If components carry raw hex values, the contrast rules stop being enforceable and the palette drifts within two sessions.
 
 **Build sequence:** follow the homepage section order in 04-structure.md. Build one section at a time, review, then move on. Do not generate the whole page in one pass.
 
